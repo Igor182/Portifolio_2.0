@@ -17,6 +17,8 @@ body{
     --font-primary: "Baloo Da2", serif;
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Muli", serif;
+    --font-roboto: "Roboto Mono", monospace, serif;
+    --font-work: "Work Sans", sans-serif;
 }
 
 .hamburguer{
@@ -200,13 +202,14 @@ header{
 }
 
 .conhecimentos{
+  background-color: #0c0c0c;
+  padding: 4rem;
   margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
   background-color: ;
-  width: 60%;
-  border: 1px solid #DDD;
-  border-radius: 10px;
+  width: 70%;
+  
 }
 
 .titulo{
@@ -217,7 +220,7 @@ header{
 }
 
 .titulo h1{
-  font-family: "Baloo Da2", serif;
+  font-family: var(--font-work);
   font-size: 2rem;
   color: #FFF;
   padding: 3rem;
@@ -225,6 +228,8 @@ header{
 }
 
 .container-ssj{
+  border: 1px solid #DDD;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -266,12 +271,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6f0000;
-    
+    background-color: #0c0c0c;
 }
 
 .contato{
-    background-color: black;
+    background: rgb(187,184,184);
+    background: linear-gradient(90deg, rgba(187,184,184,1) 0%, rgba(255,255,255,1) 48%, rgba(195,190,190,1) 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -286,7 +291,8 @@ header{
 }
 
 .contato-left{
-    background-color: aqua;
+    background-image: url(./imagens/aas.jpg);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 30%;
     height: 100%;
     
@@ -302,8 +308,9 @@ header{
 }
 
 .contato-right h1{
-    color: #CCC;
-    font-size: 2.5rem;
+    color: #000;
+    font-family: var(--font-roboto);
+    font-size: 2.2rem;
 }
 
 .fo-contato{
@@ -317,23 +324,171 @@ header{
 }
 
 .input-gp input{
+    font-family: var(--font-roboto);
+    text-align: center;
+    font-size: 1.2rem;
     width: 60%;
     height: 3rem;
     border-radius: 10px;
+    background-color: #000;
+    color: #FFF;
+}
+
+.input-gp input:hover{
+    border-color: #6f0000;
+}
+
+#botao {
+    padding-top: 1.4rem;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-submitt {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.5rem;
+    height: 3rem;
     width: 70%;
     border-radius: 10px;
     cursor: pointer;
+    background-color: rgb(53, 52, 52);
+    transition: .1s;
 }
 
-#botao{
+.btn-submitt a{
+    font-family: var(--font-roboto);
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+.btn-submitt:hover{
+    background: #6f0000;
+}
+
+.co-orcamento{
+    background-image: url(./imagens/bg-orcamento.jpg);
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
+
+.orcamento{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(85, 85, 85, .6)
+    
+}
+
+.faca-orcamento{
+    width: 40%;
+    display: flex;
+    padding: 1.5rem;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    border-radius: 10px;
+    justify-content: center;
+    background: rgb(107,0,0);
+    background: linear-gradient(90deg, rgba(107,0,0,1) 0%, rgba(80,0,0,1) 49%, rgba(96,2,2,1) 100%);
+    color: #FFF;
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+}
+
+.calc-orcamento{
+    display: flex;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.quanti{
+    display: flex;
+}
+
+.quanti p{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-family: var(--font-roboto);
+}
+
+#quanti{
+    width: 10%;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-family: var(--font-action);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.script-qua{
+    display: flex;
+    padding-top: 1.6rem;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem; 
+}
+
+.script-qua p{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-family: var(--font-roboto);
+}
+
+#js{
+    margin-left: 1rem;
+}
+
+.prazo{
+    display: flex;
+    padding-top: 1.6rem;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.prazo p{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-family: var(--font-roboto);
+}
+
+#prazo{
+    margin-left: 1rem;
+    width: 60%;
+    height: 2rem;
+}
+
+.valor{
+    display: flex;
+}
+
+.valor p{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-family: var(--font-roboto);
+    padding-top: 1.6rem;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+#botao-enviar{
+    width: 40%;
+    margin-left: 2rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: #6f0000;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: var(--font-roboto);
+}
+
+
+
+
+footer {
+    background-color: #FFF;
+    height: 15vh;
+}
