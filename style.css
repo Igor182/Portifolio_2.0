@@ -465,6 +465,7 @@ header{
 
 .valor{
     display: flex;
+    flex-direction: column;
 }
 
 .valor p{
@@ -518,6 +519,11 @@ footer {
 .social-media-footer i:hover{
     color: #aa0404;
 }
+
+#conhecimentos{
+    
+}
+
 
 
 /*  Display-mobile */
